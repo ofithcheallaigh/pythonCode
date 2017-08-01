@@ -12,5 +12,6 @@ fh = open(fname)
 
 for line in fh:
     line = line.rstrip()
-    line = line.upper()
-    print(line)
+    # line = line.upper() # This can be done on one line, see below
+    print(line.upper())
+
