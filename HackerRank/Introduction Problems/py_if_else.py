@@ -13,7 +13,7 @@ Print Weird if the number is weird; otherwise, print Not Weird.
 """
 
 n = int(input())
-if (n % 2) == 1:
+if (n % 2) == 1:                        # This will find the odd numbers
    print("Weird")
 elif (n >= 2) and (n <= 5):
     print("Not Weird")
