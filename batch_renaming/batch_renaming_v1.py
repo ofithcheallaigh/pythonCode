@@ -1,7 +1,14 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu May 30 20:09:18 2019
+import os
+from os import rename, listdir
 
-@author: a1038064
-"""
+file_start = "file"
+i = 1
+
+# list directories
+dir_list = os.listdir(os.getcwd())
+list_dir = listdir('.')
+
+for names in dir_list:
+    if names.startswith(file_start):
+        rename(names,names.replace("file","test"))
 
