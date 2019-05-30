@@ -5,7 +5,7 @@ import shutil,os, glob                                                          
 reworked_filename_list = []                                                     # Sets up empty list for renaming
 
 ### Changes directory to...
-os.chdir('C:/Users/a1038064/Desktop/Current/RearrangingSharePointData/Data_Original')
+os.chdir('C:/Users/a1038064/Documents/GitHub/pythonCode/batch_renaming/original_data')
 dir_len = len(os.listdir())                                                     # Gets length of directory
 # file_list = os.listdir('C:/Users/a1038064/Desktop/Current/RearrangingSharePointData/Data_Original')
 # print(dir_len)
