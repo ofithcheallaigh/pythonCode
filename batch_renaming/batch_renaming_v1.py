@@ -29,11 +29,14 @@ for reworked_filename in reworked_filename_list:
 #    elif x > 10:
 #        zeros = "0000"
     num = reworked_filename[-6:]
+    num = num[-4:]
     filename_main_body = reworked_filename[0:-7]
 
     original_file_name = file_list[x-1]                                         # [x - 1] because we index from zero
     # dest_file_name = reworked_filename + zeros + str(x) + file_extension        # New filename
     dest_file_name = num + "_" + filename_main_body + file_extension
+    
+    # dest_file_name = dest_file_name.strip("0")
 
     shutil.move("C:/Users/a1038064/Documents/GitHub/pythonCode/batch_renaming/original_data/" + original_file_name,
             "C:/Users/a1038064/Documents/GitHub/pythonCode/batch_renaming/Data_NewFormat/" + dest_file_name)
