@@ -20,16 +20,16 @@ for file in file_list:
 
 
 file_extension = ".csv"                                                         # File extension string used to rebuild filenames
-x = 1
-zeros = []
+x = 1                                                                           # Used for moving through the files in the folder
+# zeros = []                                                                      # Generates empty array to store zeros
 # Function to rebuild the filenames below
-for reworked_filename in reworked_filename_list:
+for reworked_filename in reworked_filename_list:                                # Loop to move through files in reworked_filename_list
 #    if x <= 10:
 #        zeros = "00000"
 #    elif x > 10:
 #        zeros = "0000"
-    num = reworked_filename[-6:]
-    num = num[-4:]
+    num = reworked_filename[-6:]                                                # Gets the full number from the end of the original file name format (ie. 000113)
+    num = num[-4:]                                                              # Only want 4 leading digits
     filename_main_body = reworked_filename[0:-7]
 
     original_file_name = file_list[x-1]                                         # [x - 1] because we index from zero
