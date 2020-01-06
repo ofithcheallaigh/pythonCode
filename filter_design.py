@@ -1,3 +1,9 @@
+# Code taken from https://stackoverflow.com/questions/25191620/creating-lowpass-filter-in-scipy-understanding-methods-and-units 
+# The answer to the SO question, and code below was wrtten by Warren Weckesser
+# https://stackoverflow.com/users/1217358/warren-weckesser
+
+# For information and understanding purposes only
+
 from scipy.signal import butter, freqz, lfilter
 import matplotlib.pyplot as plt
 import numpy as np
