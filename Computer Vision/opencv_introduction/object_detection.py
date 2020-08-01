@@ -1,5 +1,6 @@
 import cv2
 import numpy as np
+import datetime
 
 def nothing(x):
     pass
@@ -15,7 +16,7 @@ cap = cv2.VideoCapture(0)
 # cv2.createTrackbar("UV", "Tracking", 255, 255, nothing)       # UV = Upper Value
 
 while True:
-    frame = cv2.imread('smarties.png')
+    # frame = cv2.imread('smarties.png')
     _, frame = cap.read()
 
     hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
